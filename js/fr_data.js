@@ -852,6 +852,7 @@ FRData.ModernBreedList = [
     ['Bogsneak', 'Uncommon',['Plants','Meat']],
     ['Skydancer', 'Uncommon', ['Plants', 'Insects']],
     ['Obelisk', 'Uncommon', ['Insects', 'Seafood']],
+    ['Fathom', 'Uncommon', ['Plants', 'Seafood']],
 
     ['Imperial', 'Limited', ['Insects', 'Meat', 'Seafood', 'Plants']],
     ['Nocturne', 'Limited', ['Meat', 'Insects']],
@@ -866,6 +867,9 @@ FRData.AncientBreedList = [
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Undertide', 'Common', ['Seafood', 'Plants']],
+    //['Auraboa', 'Common', ['Seafood', 'Meat']], Not sure if its mandatory to add ALL the genes for new ancients so just commenting this in case
+    //['Sandsurge', 'Common', ['Insects', 'Meat']],
+   //['Dusthide', 'Common', ['Insects']],
     ['Aether', 'Common', ['Plants', 'Insects']]
 ]
 
