@@ -59,7 +59,8 @@ FRData.ModernPrimaryGeneList = [
     ['Petals', 'Rare', '1500 G'],
     ['Pharaoh', 'Rare', ''],
     ['Starmap', 'Rare', '1500 G'],
-    ['Wasp', 'Rare', '1500 G']
+    ['Wasp', 'Rare', '1500 G'],
+    ['Petrified', 'Rare', '1500 G']
 ]
 
 FRData.ModernSecondaryGeneList = [
@@ -106,9 +107,10 @@ FRData.ModernSecondaryGeneList = [
     ['Butterfly', 'Rare', '1200 G'],
     ['Constellation', 'Rare', '1200 G'],
     ['Facet', 'Rare', '1200 G'],
-    ['Jester', 'Rare', ''],
+    ['Jester', 'Rare', '1200 G'],
     ['Sarcophagus', 'Rare', '1200 G'],
-    ['Shimmer', 'Rare', '1200 G']
+    ['Shimmer', 'Rare', '1200 G'],
+    ['Lode', 'Rare', '1200 G']
 ]
 
 FRData.ModernTertiaryGeneList = [
@@ -145,10 +147,11 @@ FRData.ModernTertiaryGeneList = [
     ['Filigree', 'Rare', '1200 G'],
     ['Glimmer', 'Rare', '1200 G'],
     ['Glowtail', 'Rare', '1200 G'],
-    ['Koi', 'Rare', ''],
+    ['Koi', 'Rare', '1200 G'],
     ['Opal', 'Rare', '1200 G'],
-    ['Soap', 'Rare', ''],
-    ['Stained', 'Rare', '1200 G']
+    ['Soap', 'Rare', '1200 G'],
+    ['Stained', 'Rare', '1200 G'],
+    ['Wish', 'Rare', '1200 G']
 ]
 
 FRData.GaolerPrimaryGeneList = [
