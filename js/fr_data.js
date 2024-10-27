@@ -557,6 +557,488 @@ FRData.UndertideTertiaryGeneList = [
     ['Tentacles', 'Rare', '']
 ]
 
+FRData.AetherPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Checkers', 'Common', ''],
+    ['Clown', 'Common', ''],
+    ['Fade', 'Common', ''],
+    ['Falcon', 'Common', ''],
+    ['Laced', 'Common', ''],
+    ['Piebald', 'Common', ''],
+    ['Savannah', 'Common', ''],
+    ['Spool', 'Common', ''],
+    ['Tapir', 'Common', ''],
+    ['Tiger', 'Common', ''],
+    ['Varnish', 'Common', ''],
+    ['Wrought', 'Common', ''],
+
+    ['Bar', 'Uncommon', ''],
+    ['Boa', 'Uncommon', ''],
+    ['Cinder', 'Uncommon', ''],
+    ['Giraffe', 'Uncommon', ''],
+    ['Jaguar', 'Uncommon', ''],
+    ['Jupiter', 'Uncommon', ''],
+    ['Lionfish', 'Uncommon', ''],
+    ['Mosaic', 'Uncommon', ''],
+    ['Ribbon', 'Uncommon', ''],
+    ['Vipera', 'Uncommon', ''],
+
+    ['Boulder', 'Limited', ''],
+    ['Candy', 'Limited', ''],
+    ['Chrysocolla', 'Limited', ''],
+    ['Fern', 'Limited', ''],
+    ['Ground', 'Limited', ''],
+    ['Orb', 'Limited', ''],
+    ['Python', 'Limited', ''],
+    ['Skink', 'Limited', ''],
+    ['Slime', 'Limited', ''],
+    ['Stitched', 'Limited', ''],
+    ['Tide', 'Limited', ''],
+
+    ['Crystal', 'Rare', ''],
+    ['Harlequin', 'Rare', ''],
+    ['Metallic', 'Rare', ''],
+    ['Petals', 'Rare', ''],
+    ['Starmap', 'Rare', ''],
+    ['Twinkle', 'Rare', ''],
+    ['Wasp', 'Rare', '']
+]
+
+FRData.AetherSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Chess', 'Common', ''],
+    ['Edged', 'Common', ''],
+    ['Eye Spots', 'Common', ''],
+    ['Peregrine', 'Common', ''],
+    ['Safari', 'Common', ''],
+    ['Spire', 'Common', ''],
+    ['Stripes', 'Common', ''],
+    ['Thread', 'Common', ''],
+
+    ['Blaze', 'Uncommon', ''],
+    ['Breakup', 'Uncommon', ''],
+    ['Current', 'Uncommon', ''],
+    ['Daub', 'Uncommon', ''],
+    ['Eel', 'Uncommon', ''],
+    ['Flair', 'Uncommon', ''],
+    ['Hex', 'Uncommon', ''],
+    ['Hypnotic', 'Uncommon', ''],
+    ['Noxtide', 'Uncommon', ''],
+    ['Rosette', 'Uncommon', ''],
+    ['Saddle', 'Uncommon', ''],
+    ['Saturn', 'Uncommon', ''],
+
+    ['Fissure', 'Limited', ''],
+    ['Foam', 'Limited', ''],
+    ['Icing', 'Limited', ''],
+    ['Morph', 'Limited', ''],
+    ['Myrid', 'Limited', ''],
+    ['Paisley', 'Limited', ''],
+    ['Patchwork', 'Limited', ''],
+    ['Sludge', 'Limited', ''],
+    ['Spinner', 'Limited', ''],
+    ['Weaver', 'Limited', ''],
+
+    ['Alloy', 'Rare', ''],
+    ['Bee', 'Rare', ''],
+    ['Butterfly', 'Rare', ''],
+    ['Constellation', 'Rare', ''],
+    ['Facet', 'Rare', ''],
+    ['Flicker', 'Rare', '']
+]
+
+FRData.AetherTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Contour', 'Common', ''],
+    ['Points', 'Common', ''],
+    ['Thylacine', 'Common', ''],
+    ['Underbelly', 'Common', ''],
+    
+    ['Braids', 'Uncommon', ''],
+    ['Crackle', 'Uncommon', ''],
+    ['Fishbone', 'Uncommon', ''],
+    ['Gembound', 'Uncommon', ''],
+    ['Ghost', 'Uncommon', ''],
+    ['Lace', 'Uncommon', ''],
+    ['Smoke', 'Uncommon', ''],
+    ['Sparkle', 'Uncommon', ''],
+    ['Spines', 'Uncommon', ''],
+    ['Stinger', 'Uncommon', ''],
+    ['Thorns', 'Uncommon', ''],
+    ['Whiskers', 'Uncommon', ''],
+
+    ['Angler', 'Limited', ''],
+    ['Blossom', 'Limited', ''],
+    ['Branches', 'Limited', ''],
+    ['Capsule', 'Limited', ''],
+    ['Carnivore', 'Limited', ''],
+    ['Firebreather', 'Limited', ''],
+    ['Firefly', 'Limited', ''],
+    ['Flecks', 'Limited', ''],
+    ['Flutter', 'Limted', ''],
+    ['Keel', 'Limited', ''],
+    ['Mandibles', 'Limited', ''],
+    ['Nudibranch', 'Limited', ''],
+    ['Porcupine', 'Limited', ''],
+    ['Scales', 'Limited', ''],
+    ['Smirch', 'Limited', ''],
+    ['Starfall', 'Limited', ''],
+    ['Trickmurk', 'Limited', ''],
+    ['Veined', 'Limited', ''],
+
+    ['Circuit', 'Rare', ''],
+    ['Diaphanous', 'Rare', ''],
+    ['Fans', 'Rare', ''],
+    ['Glowtail', 'Rare', ''],
+    ['Koi', 'Rare', ''],
+    ['Medusa', 'Rare', ''],
+    ['Monarch', 'Rare', ''],
+    ['Ornaments', 'Rare', ''],
+    ['Sailfin', 'Rare', ''],
+    ['Soap', 'Rare', ''],
+    ['Space', 'Rare', ''],
+    ['Spores', 'Rare', ''],
+    ['Stained', 'Rare', ''],
+    ['Tentacles', 'Rare', ''],
+    ['Wish', 'Rare', '']
+]
+
+FRData.SandsurgePrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Arapaima', 'Common', ''],
+    ['Clown', 'Common', ''],
+    ['Fade', 'Common', ''],
+    ['Piebald', 'Common', ''],
+    ['Savannah', 'Common', ''],
+    ['Swirl', 'Common', ''],
+    ['Tapir', 'Common', ''],
+    ['Tiger', 'Common', ''],
+    ['Wrought', 'Common', ''],
+
+    ['Boa', 'Uncommon', ''],
+    ['Cherub', 'Uncommon', ''],
+    ['Cinder', 'Uncommon', ''],
+    ['Flaunt', 'Uncommon', ''],
+    ['Jaguar', 'Uncommon', ''],
+    ['Jupiter', 'Uncommon', ''],
+    ['Lionfish', 'Uncommon', ''],
+    ['Mosaic', 'Uncommon', ''],
+    ['Rattlesnake', 'Uncommon', ''],
+
+    ['Boulder', 'Limited', ''],
+    ['Ground', 'Limited', ''],
+    ['Orb', 'Limited', ''],
+    ['Pinstripe', 'Limited', ''],
+    ['Python', 'Limited', ''],
+    ['Sailfish', 'Limited', ''],
+    ['Slime', 'Limited', ''],
+    ['Chrysocolla', 'Limited', ''],
+
+    ['Harlequin', 'Rare', ''],
+    ['Wasp', 'Rare', '']
+]
+
+FRData.SandsurgeSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Arowana', 'Common', ''],
+    ['Blend', 'Common', ''],
+    ['Eye Spots', 'Common', ''],
+    ['Marbled', 'Common', ''],
+    ['Paint', 'Common', ''],
+    ['Safari', 'Common', ''],
+    ['Spire', 'Common', ''],
+    ['Striation', 'Common', ''],
+    ['Stripes', 'Common', ''],
+
+    ['Blaze', 'Uncommon', ''],
+    ['Breakup', 'Uncommon', ''],
+    ['Diamondback', 'Uncommon', ''],
+    ['Flair', 'Uncommon', ''],
+    ['Noxtide', 'Uncommon', ''],
+    ['Rosette', 'Uncommon', ''],
+    ['Saddle', 'Uncommon', ''],
+    ['Saturn', 'Uncommon', ''],
+    ['Seraph', 'uncommon', ''],
+
+    ['Fissure', 'Limited', ''],
+    ['Marlin', 'Limited', ''],
+    ['Morph', 'Limited', ''],
+    ['Myrid', 'Limited', ''],
+    ['Sludge', 'Limited', ''],
+    ['Trail', 'Limited', ''],
+    ['Weaver', 'Limited', ''],
+
+    ['Bee', 'Rare', ''],
+    ['Jester', 'Rare', ''],
+    ['Malachite', 'Rare', '']
+]
+
+FRData.UndertideTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Chitin', 'Common', ''],
+    ['Darts', 'Common', ''],
+    ['Kumo', 'Common', ''],
+    ['Peacock', 'Common', ''],
+    ['Thylacine', 'Common', ''],
+    ['underbelly', 'Common', ''],
+
+    ['Beard', 'Uncommon', ''],
+    ['Crest', 'Uncommon', ''],
+    ['Fishbone', 'Uncommon', ''],
+    ['Gembound', 'Uncommon', ''],
+    ['Lace', 'Uncommon', ''],
+    ['Okapi', 'Uncommon', ''],
+    ['Runes', 'Uncommon', ''],
+    ['Sparkle', 'Uncommon', ''],
+    ['Spines', 'Uncommon', ''],
+    ['Thorns', 'Uncommon', ''],
+
+    ['Branches', 'Limited', ''],
+    ['Firebreather', 'Limited', ''],
+    ['Flameforger', 'Limited', ''],
+    ['Keel', 'Limited', ''],
+    ['Shark', 'Limited', ''],
+    ['Smirch', 'Limited', ''],
+    ['Thundercrack', 'Limited', ''],
+    ['Warrior', 'Limited', ''],
+
+    ['Augment', 'Rare', ''],
+    ['Rockbreaker', 'Rare', ''],
+    ['Soap', 'Rare', ''],
+    ['Spectre', 'Rare', ''],
+    ['Starfall', 'Rare', '']
+]
+
+FRData.AuraboaPrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Caterpillar', 'Common', ''],
+    ['Fade', 'Common', ''],
+    ['Falcon', 'Common', ''],
+    ['Laced', 'Common', ''],
+    ['Piebald', 'Common', ''],
+    ['Tapir', 'Common', ''],
+    ['Tiger', 'Common', ''],
+    ['Varnish', 'Common', ''],
+
+    ['Bar', 'Uncommon', ''],
+    ['Flaunt', 'Uncommon', ''],
+    ['Giraffe', 'Uncommon', ''],
+    ['Jaguar', 'Uncommon', ''],
+    ['Mochlus', 'Uncommon', ''],
+    ['Mosaic', 'Uncommon', ''],
+    ['Rattlesnake', 'Uncommon', ''],
+    ['Ripple', 'Uncommon', ''],
+    ['Vipera', 'Uncommon', ''],
+
+    ['Baulder', 'Limited', ''],
+    ['Fern', 'Limited', ''],
+    ['Love', 'Limited', ''],
+    ['Orb', 'Limited', ''],
+    ['Python', 'Limited', ''],
+
+    ['Boa', 'Rare', ''],
+    ['Harlequin', 'Rare', ''],
+    ['Metallic', 'Rare', ''],
+    ['Starmap', 'Rare', ''],
+    ['Wicker', 'Rare', '']
+]
+
+FRData.AuraboaSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Edged', 'Common', ''],
+    ['Lacquer', 'Common', ''],
+    ['Larvae', 'Common', ''],
+    ['Paint', 'Common', ''],
+    ['Peregrine', 'Common', ''],
+    ['Striation', 'Common', ''],
+    ['Stripes', 'Common', ''],
+
+    ['Breakup', 'Uncommon', ''],
+    ['Current', 'Uncommon', ''],
+    ['Daub', 'Uncommon', ''],
+    ['Diamondback', 'Uncommon', ''],
+    ['Flair', 'Uncommon', ''],
+    ['Hex', 'Uncommon', ''],
+    ['Hypnotic', 'Uncommon', ''],
+    ['Riopa', 'Uncommon', ''],
+    ['Rosette', 'Uncommon', ''],
+    ['Saddle', 'Uncommon', ''],
+
+    ['Affection', 'Limited', ''],
+    ['Morph', 'Limited', ''],
+    ['Myrid', 'Limited', ''],
+    ['Paisley', 'Limited', ''],
+    ['Weaver', 'Limited', ''],
+
+    ['Alloy', 'Rare', ''],
+    ['Constellation', 'Rare', ''],
+    ['Jester', 'Rare', ''],
+    ['Woven', 'Rare', '']
+]
+
+FRData.AuraboaTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Contour', 'Common', ''],
+    ['Peacock', 'Common', ''],
+    ['Terracotta', 'Common', ''],
+    ['Topcoat', 'Common', ''],
+    ['Underbelly', 'Common', ''],
+
+    ['Crackle', 'Uncommon', ''],
+    ['Crest', 'Uncommon', ''],
+    ['Fishbone', 'Uncommon', ''],
+    ['Paradise', 'Uncommon', ''],
+    ['Smoke', 'Uncommon', ''],
+    ['Spines', 'Uncommon', ''],
+    ['Stinger', 'Uncommon', ''],
+    ['Thorns', 'Uncommon', ''],
+    ['Willow', 'Uncommon', ''],
+
+    ['Batty', 'Limited', ''],
+    ['Branches', 'Limited', ''],
+    ['Capsule', 'Limited', ''],
+    ['Crystalline', 'Limited', ''],
+    ['Firebreather', 'Limited', ''],
+    ['Firefly', 'Limited', ''],
+    ['Greenskeeper', 'Limited', ''],
+    ['Keel', 'Limited', ''],
+    ['Polkadot', 'Limited', ''],
+    ['Porcupine', 'Limited', ''],
+    ['Rockbreaker', 'Limited', ''],
+    ['Scales', 'Limited', ''],
+    ['Scuttle', 'Limited', ''],
+
+    ['Koi', 'Rare', ''],
+    ['Medusa', 'Rare', ''],
+    ['Opal', 'Rare', ''],
+    ['Plumage', 'Rare', ''],
+    ['Sailfin', 'Rare', ''],
+    ['Stained', 'Rare', '']
+]
+
+FRData.DusthidePrimaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Checkers', 'Common', ''],
+    ['Fade', 'Common', ''],
+    ['Falcon', 'Common', ''],
+    ['Laced', 'Common', ''],
+    ['Piebald', 'Common', ''],
+    ['Savannah', 'Common', ''],
+    ['Speckle', 'Common', ''],
+    ['Varnish', 'Common', ''],
+    ['Wrought', 'Common', ''],
+
+    ['Bar', 'Uncommon', ''],
+    ['Cherub', 'Uncommon', ''],
+    ['Cinder', 'Uncommon', ''],
+    ['Giraffe', 'Uncommon', ''],
+    ['Jupiter', 'Uncommon', ''],
+    ['Mosaic', 'Uncommon', ''],
+    ['Ribbon', 'Uncommon', ''],
+    ['Ripple', 'Uncommon', ''],
+    ['Strike', 'Uncommon', ''],
+
+    ['Arc', 'Limited', ''],
+    ['Display', 'Limited', ''],
+    ['Ground', 'Limited', ''],
+    ['Orb', 'Limited', ''],
+    ['Pinstripe', 'Limited', ''],
+    ['Sailfin', 'Limited', ''],
+    ['Skink', 'Limited', ''],
+
+    ['Harlequin', 'Rare', ''],
+    ['Petals', 'Rare', ''],
+    ['Petrified', 'Rare', ''],
+    ['Wasp', 'Rare', '']
+]
+
+FRData.DusthideSecondaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Blend', 'Common', ''],
+    ['Chess', 'Common', ''],
+    ['Edged', 'Common', ''],
+    ['Freckle', 'Common', ''],
+    ['Lacquer', 'Common', ''],
+    ['Paint', 'Common', ''],
+    ['peregrine', 'Common', ''],
+    ['Safari', 'Common', ''],
+    ['Spire', 'Common', ''],
+
+    ['Blaze', 'Uncommon', ''],
+    ['Breakup', 'Uncommon', ''],
+    ['Coil', 'Uncommon', ''],
+    ['Current', 'Uncommon', ''],
+    ['Daub', 'Uncommon', ''],
+    ['Eel', 'Uncommon', ''],
+    ['Hex', 'Uncommon', ''],
+    ['Saturn', 'Uncommon', ''],
+    ['Seraph', 'Uncommon', ''],
+
+    ['Fissure', 'Limited', ''],
+    ['Loop', 'Limited', ''],
+    ['Marlin', 'Limited', ''],
+    ['Parade', 'Limited', ''],
+    ['Spinner', 'Limited', ''],
+    ['Trail', 'Limited', ''],
+    ['Weaver', 'Limited', ''],
+
+    ['Bee', 'Rare', ''],
+    ['Butterfly', 'Rare', ''],
+    ['Jester', 'Rare', ''],
+    ['Lode', 'Rare', '']
+]
+
+FRData.DusthideTertiaryGeneList = [
+    ['Basic', 'Plentiful', '10000 T'],
+
+    ['Topcoat', 'Common', ''],
+    ['Underbelly', 'Common', ''],
+
+    ['Antlers', 'Uncommon', ''],
+    ['Fishbone', 'Uncommon', ''],
+    ['Gembond', 'Uncommon', ''],
+    ['Ghost', 'Uncommon', ''],
+    ['Okapi', 'Uncommon', ''],
+    ['Ringlets', 'Uncommon', ''],
+    ['Smoke', 'Uncommon', ''],
+    ['Sparkle', 'Uncommon', ''],
+    ['Spines', 'Uncommon', ''],
+    ['Thorns', 'Uncommon', ''],
+    ['Whsikers', 'Uncommon', ''],
+
+    ['Angler', 'Limited', ''],
+    ['Batty', 'Limited', ''],
+    ['Blossom', 'Limited', ''],
+    ['Brightshine', 'Limited', ''],
+    ['Carnivore', 'Limited', ''],
+    ['Dewlap', 'Limited', ''],
+    ['Greenskeeper', 'Limited', ''],
+    ['Mandibles', 'Limited', ''],
+    ['Pachy', 'Limited', ''],
+    ['Pokadot', 'Limited', ''],
+    ['Wavecrest', 'Limited', ''],
+
+    ['Augment', 'Rare', ''],
+    ['Glowtail', 'Rare', ''],
+    ['Opal', 'Rare', ''],
+    ['Spores', 'Rare', ''],
+    ['Stained', 'Rare', ''],
+    ['Veil', 'Rare', '']
+]
+
 FRData.ColorList = [
     ['Maize', '#FFFDEA'],
     ['Cream', '#FFEFDC'],
@@ -751,6 +1233,7 @@ FRData.ModernBreedList = [
     ['Bogsneak', 'Uncommon',['Plants','Meat']],
     ['Skydancer', 'Uncommon', ['Plants', 'Insects']],
     ['Obelisk', 'Uncommon', ['Insects', 'Seafood']],
+    ['Fathom', 'Uncommon', ['Plants', 'Seafood']]
 
     ['Imperial', 'Limited', ['Insects', 'Meat', 'Seafood', 'Plants']],
     ['Nocturne', 'Limited', ['Meat', 'Insects']],
@@ -764,7 +1247,11 @@ FRData.AncientBreedList = [
     ['Banescale', 'Common', ['Insects', 'Seafood', 'Meat']],
     ['Veilspun', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
     ['Aberration', 'Common', ['Insects', 'Plants', 'Seafood', 'Meat']],
-    ['Undertide', 'Common', ['Seafood', 'Plants']]
+    ['Undertide', 'Common', ['Seafood', 'Plants']],
+    ['Aether', 'Common', ['Insects', 'Plants']],
+    ['Sandsurge', 'Common', ['Insects', 'Meat']],
+    ['Auraboa', 'Common', ['Seafood' 'Meat']],
+    ['Dusthide', 'Common', ['Insects']]
 ]
 
 FRData.BreedRuleList = [
