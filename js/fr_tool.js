@@ -406,17 +406,6 @@ FRTool.initFR = function(data) {
         new FRTool.SandsurgeTertiaryGene(data.SandsurgeTertiaryGeneList[i][0], data.SandsurgeTertiaryGeneList[i][1], data.SandsurgeTertiaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.AuraboaPrimaryGeneList.length; i++) {
-        new FRTool.AuraboaPrimaryGene(data.AuraboaPrimaryGeneList[i][0], data.AuraboaPrimaryGeneList[i][1], data.AuraboaPrimaryGeneList[i][2]);
-    };
-
-    for (var i = 0; i < data.AuraboaSecondaryGeneList.length; i++) {
-        new FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
-    };
-
-    for (var i = 0; i < data.AuraboaTertiaryGeneList.length; i++) {
-        new FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
-    };
 
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
