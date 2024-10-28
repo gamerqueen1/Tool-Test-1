@@ -730,7 +730,7 @@ FRData.SandsurgeSecondaryGeneList = [
 FRData.SandsurgeTertiaryGeneList = [
     ['Basic', 'Plentiful', ''],
 
-    [‘Chitin', 'Common', ''],
+    ['Chitin', 'Common', ''],
     ['Darts', 'Common', ''],
     ['Kumo', 'Common', ''],
     ['Peacock', 'Common', ''],
