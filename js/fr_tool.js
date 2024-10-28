@@ -213,11 +213,20 @@ FRTool.SandsurgeTertiaryGene = function(name, odds, price) {
 
 FRTool.AuraboaPrimaryGene = function(name, odds, price) {
     this.Name = name;
-    this.Odds = FRTool.Odds[odds];
+
+    // Check if FRTool.Odds is defined and if it contains the given odds
+    if (FRTool.Odds && FRTool.Odds[odds] !== undefined) {
+        this.Odds = FRTool.Odds[odds];
+    } else {
+        console.error('Invalid odds value:', odds, 'in FRTool.Odds:', FRTool.Odds);
+        this.Odds = null; // or set a default value if needed
+    }
+
     this.Price = price;
     FRTool.AuraboaPrimaryGene[name] = this;
     FRTool.AuraboaPrimaryGenes.push(this);
 }
+
 
 FRTool.AuraboaSecondaryGene = function(name, odds, price) {
     this.Name = name;
