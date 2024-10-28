@@ -407,15 +407,15 @@ FRTool.initFR = function(data) {
     };
 
     for (var i = 0; i < data.AuraboaPrimaryGeneList.length; i++) {
-        new FRTool.AuraboaPrimaryGene(data.AuraboaPrimaryGeneList[i][0], data.AuraboaPrimaryGeneList[i][1], data.AuraboaPrimaryGeneList[i][2]);
+         FRTool.AuraboaPrimaryGene(data.AuraboaPrimaryGeneList[i][0], data.AuraboaPrimaryGeneList[i][1], data.AuraboaPrimaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.AuraboaSecondaryGeneList.length; i++) {
-        new FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
+         FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.AuraboaTertiaryGeneList.length; i++) {
-        new FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
+         FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
     };
 
 
