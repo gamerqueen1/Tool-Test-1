@@ -388,7 +388,7 @@
 "Gliders":"Gliders",
 "Angler":"Angler"
 
-    //Sandsurge
+// Sandsurge
     "Sandsurge Primary Gene List": "Sandsurge Primary Gene List",
     "Sandsurge Secondary Gene List": "Sandsurge Secondary Gene List",
     "Sandsurge Tertiary Gene List": "Sandsurge Tertiary Gene List",
@@ -420,7 +420,6 @@
     "Chrysocolla":"Chrysocolla"
     "Harlequin":"Harlequin"
     "Wasp":"Wasp"
-
     "Arowana":"Arowana"
     "Blend":"Blend"
     "EyeSpots":"EyeSpots"
@@ -448,7 +447,6 @@
     "Bee":"Bee"
     "Jester":"Jester"
     "Malachite":"Malachite"
-
     "Chitin":"Chitin"
     "Darts":"Darts"
     "Kumo":"Kumo"
