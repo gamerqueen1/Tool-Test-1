@@ -418,7 +418,6 @@ FRTool.initFR = function(data) {
         new FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
     };
 
-
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
     };
