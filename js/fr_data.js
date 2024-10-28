@@ -754,7 +754,7 @@ FRData.SandsurgeTertiaryGeneList = [
     ['Shark', 'Limited', ''],
     ['Smirch', 'Limited', ''],
     ['Thundercrack', 'Limtied', ''],
-    ['Warrior', 'Limited, ''],
+    ['Warrior', 'Limtied', ''],
 
     ['Augment', 'Rare', ''],
     ['Rockbreaker', 'Rare', ''],
