@@ -219,6 +219,33 @@ for (var i = 0; i < FRTool.SandsurgeTertiaryGenes.length; i++) {
     );
 }
 
+for (var i = 0; i < FRTool.AuraboaPrimaryGenes.length; i++) {
+    $('#auraboa_primary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AuraboaPrimaryGenes[i].Name).attr("data-localize", FRTool.AuraboaPrimaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AuraboaPrimaryGenes[i].Odds.Name).attr("data-localize", FRTool.AuraboaPrimaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AuraboaPrimaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.AuraboaSecondaryGenes.length; i++) {
+    $('#auraboa_secondary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AuraboaSecondaryGenes[i].Name).attr("data-localize", FRTool.AuraboaSecondaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AuraboaSecondaryGenes[i].Odds.Name).attr("data-localize", FRTool.AuraboaSecondaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AuraboaSecondaryGenes[i].Price))
+    );
+}
+
+for (var i = 0; i < FRTool.AuraboaTertiaryGenes.length; i++) {
+    $('#auraboa_tertiary_gene_list').find("tbody").append(
+        $("<tr></tr>")
+        .append($("<td></td>").text(FRTool.AuraboaTertiaryGenes[i].Name).attr("data-localize", FRTool.AuraboaTertiaryGenes[i].Name))
+        .append($("<td></td>").text(FRTool.AuraboaTertiaryGenes[i].Odds.Name).attr("data-localize", FRTool.AuraboaTertiaryGenes[i].Odds.Name))
+        .append($("<td></td>").text(FRTool.AuraboaTertiaryGenes[i].Price))
+    );
+}
+
 for (var i = 0; i < FRTool.Colors.length; i++) {
     $('#color_list').find("tbody").append(
         $("<tr></tr>")
@@ -395,6 +422,9 @@ allowSort("undertide_tertiary_gene_list");
 allowSort("sandsurge_primary_gene_list");
 allowSort("sandsurge_secondary_gene_list");
 allowSort("sandsurge_tertiary_gene_list");
+allowSort("auraboa_primary_gene_list");
+allowSort("auraboa_secondary_gene_list");
+allowSort("auraboa_tertiary_gene_list");
 allowSort("color_list");
 allowSort("breed_rule_list");
 allowSort("gene_rule_list");
