@@ -211,30 +211,6 @@ FRTool.SandsurgeTertiaryGene = function(name, odds, price) {
     FRTool.SandsurgeTertiaryGenes.push(this);
 }
 
-FRTool.AuraboaPrimaryGene = function(name, odds, price) {
-    this.Name = name;
-    this.Odds = FRTool.Odds[odds];
-    this.Price = price;
-    FRTool.AuraboaPrimaryGene[name] = this;
-    FRTool.AuraboaPrimaryGenes.push(this);
-}
-
-FRTool.AuraboaSecondaryGene = function(name, odds, price) {
-    this.Name = name;
-    this.Odds = FRTool.Odds[odds];
-    this.Price = price;
-    FRTool.AuraboaSecondaryGene[name] = this;
-    FRTool.AuraboaSecondaryGenes.push(this);
-}
-
-FRTool.AuraboaTertiaryGene = function(name, odds, price) {
-    this.Name = name;
-    this.Odds = FRTool.Odds[odds];
-    this.Price = price;
-    FRTool.AuraboaTertiaryGene[name] = this;
-    FRTool.AuraboaTertiaryGenes.push(this);
-}
-
 FRTool.Color = function(name, color) {
     this.Name = name;
     this.Color = color;
@@ -289,9 +265,6 @@ FRTool.initFR = function(data) {
     FRTool.SandsurgePrimaryGenes = [];
     FRTool.SandsurgeSecondaryGenes = [];
     FRTool.SandsurgeTertiaryGenes = [];
-    FRTool.AuraboaPrimaryGenes = [];
-    FRTool.AuraboaSecondaryGenes = [];
-    FRTool.AuraboaTertiaryGenes = [];
     FRTool.ModernBreeds = [];
     FRTool.AncientBreeds = [];
     FRTool.Colors = [];
@@ -523,10 +496,7 @@ FRTool.getGeneRate = function(gene1, gene2) {
         || (gene1 instanceof FRTool.AetherTertiaryGene && gene2 instanceof FRTool.AetherTertiaryGene)
         || (gene1 instanceof FRTool.SandsurgePrimaryGene && gene2 instanceof FRTool.SandsurgePrimaryGene)
         || (gene1 instanceof FRTool.SandsurgeSecondaryGene && gene2 instanceof FRTool.SandsurgeSecondaryGene)
-        || (gene1 instanceof FRTool.SandsurgeTertiaryGene && gene2 instanceof FRTool.SandsurgeTertiaryGene)
-        || (gene1 instanceof FRTool.AuraboaPrimaryGene && gene2 instanceof FRTool.AuraboaPrimaryGene)
-        || (gene1 instanceof FRTool.AuraboaSecondaryGene && gene2 instanceof FRTool.AuraboaSecondaryGene)
-        || (gene1 instanceof FRTool.AuraboaTertiaryGene && gene2 instanceof FRTool.AuraboaTertiaryGene)) {
+        || (gene1 instanceof FRTool.SandsurgeTertiaryGene && gene2 instanceof FRTool.SandsurgeTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
         }
