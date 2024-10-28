@@ -83,17 +83,98 @@ FRTool.loadData = function(data) {
         new FRTool.AetherTertiaryGene(data.AetherTertiaryGeneList[i][0], data.AetherTertiaryGeneList[i][1], data.AetherTertiaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.SandsurgePrimaryGeneList.length; i++) {
-        new FRTool.SandsurgePrimaryGene(data.SandsurgePrimaryGeneList[i][0], data.SandsurgePrimaryGeneList[i][1], data.SandsurgePrimaryGeneList[i][2]);
-    };
+// Define the FRTool namespace
+var FRTool = {
+    // Constructors for different gene types
+    SandsurgePrimaryGene: function(param1, param2, param3) {
+        this.param1 = param1;
+        this.param2 = param2;
+        this.param3 = param3;
+        // Additional properties or methods can be added here
+    },
 
-    for (var i = 0; i < data.SandsurgeSecondaryGeneList.length; i++) {
-        new FRTool.SandsurgeSecondaryGene(data.SandsurgeSecondaryGeneList[i][0], data.SandsurgeSecondaryGeneList[i][1], data.SandsurgeSecondaryGeneList[i][2]);
-    };
+    SandsurgeSecondaryGene: function(param1, param2) {
+        this.param1 = param1;
+        this.param2 = param2;
+        // Additional properties or methods can be added here
+    },
 
-    for (var i = 0; i < data.SandsurgeTertiaryGeneList.length; i++) {
-        new FRTool.SandsurgeTertiaryGene(data.SandsurgeTertiaryGeneList[i][0], data.SandsurgeTertiaryGeneList[i][1], data.SandsurgeTertiaryGeneList[i][2]);
-    };
+    SandsurgeTertiaryGene: function(param1) {
+        this.param1 = param1;
+        // Additional properties or methods can be added here
+    },
+
+    // Method to load data
+    loadData: function(data) {
+        // Check if data is valid and contains the necessary gene lists
+        if (!data) {
+            console.error("Data is undefined or null.");
+            return;
+        }
+
+        if (data.SandsurgePrimaryGeneList) {
+            for (var i = 0; i < data.SandsurgePrimaryGeneList.length; i++) {
+                var geneData = data.SandsurgePrimaryGeneList[i];
+                if (geneData.length >= 3) { // Ensure there are enough parameters
+                    new FRTool.SandsurgePrimaryGene(geneData[0], geneData[1], geneData[2]);
+                } else {
+                    console.warn("Skipping SandsurgePrimaryGene due to insufficient data:", geneData);
+                }
+            }
+        } else {
+            console.warn("SandsurgePrimaryGeneList is missing from data.");
+        }
+
+        if (data.SandsurgeSecondaryGeneList) {
+            for (var i = 0; i < data.SandsurgeSecondaryGeneList.length; i++) {
+                var geneData = data.SandsurgeSecondaryGeneList[i];
+                if (geneData.length >= 2) { // Ensure there are enough parameters
+                    new FRTool.SandsurgeSecondaryGene(geneData[0], geneData[1]);
+                } else {
+                    console.warn("Skipping SandsurgeSecondaryGene due to insufficient data:", geneData);
+                }
+            }
+        } else {
+            console.warn("SandsurgeSecondaryGeneList is missing from data.");
+        }
+
+        if (data.SandsurgeTertiaryGeneList) {
+            for (var i = 0; i < data.SandsurgeTertiaryGeneList.length; i++) {
+                var geneData = data.SandsurgeTertiaryGeneList[i];
+                if (geneData.length >= 1) { // Ensure there is at least one parameter
+                    new FRTool.SandsurgeTertiaryGene(geneData[0]);
+                } else {
+                    console.warn("Skipping SandsurgeTertiaryGene due to insufficient data:", geneData);
+                }
+            }
+        } else {
+            console.warn("SandsurgeTertiaryGeneList is missing from data.");
+        }
+    }
+};
+
+// Example usage with data
+var exampleData = {
+    SandsurgePrimaryGeneList: [
+        [1, 'A', 'Alpha'],
+        [2, 'B', 'Beta'],
+        // Add more data as needed
+    ],
+    SandsurgeSecondaryGeneList: [
+        [3, 'C'],
+        [4, 'D'],
+        // Add more data as needed
+    ],
+    SandsurgeTertiaryGeneList: [
+        [5],
+        [6],
+        // Add more data as needed
+    ]
+};
+
+// Load the example data
+FRTool.loadData(exampleData);
+
 
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
