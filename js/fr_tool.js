@@ -414,9 +414,22 @@ FRTool.initFR = function(data) {
          FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
     };
 
+// Ensure data and AuraboaTertiaryGeneList are defined
+if (data && Array.isArray(data.AuraboaTertiaryGeneList)) {
+    // Loop through the AuraboaTertiaryGeneList
     for (var i = 0; i < data.AuraboaTertiaryGeneList.length; i++) {
-         FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
-    };
+        var geneListItem = data.AuraboaTertiaryGeneList[i];
+
+        // Check if the current item is an array and has at least 3 elements
+        if (Array.isArray(geneListItem) && geneListItem.length >= 3) {
+            FRTool.AuraboaTertiaryGene(geneListItem[0], geneListItem[1], geneListItem[2]);
+        } else {
+            console.warn('Invalid item in AuraboaTertiaryGeneList at index ' + i, geneListItem);
+        }
+    }
+} else {
+    console.error('AuraboaTertiaryGeneList is undefined or not an array');
+}
 
 
 
