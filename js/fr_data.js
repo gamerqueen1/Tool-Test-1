@@ -1229,7 +1229,6 @@ FRData.AncientBreedList = [
     ['Undertide', 'Common', ['Seafood', 'Plants']],
     ['Aether', 'Common', ['Plants', 'Insects']],
     ['Sandsurge', 'Common', ['Insects', 'Meat']],
-    ['Auraboa', 'Common', ['Seafood', 'Meat']],
     ['Dusthide', 'Common', ['Insects']]
 ]
 
