@@ -211,6 +211,30 @@ FRTool.SandsurgeTertiaryGene = function(name, odds, price) {
     FRTool.SandsurgeTertiaryGenes.push(this);
 }
 
+FRTool.AuraboaPrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AuraboaPrimaryGene[name] = this;
+    FRTool.AuraboaPrimaryGenes.push(this);
+}
+
+FRTool.AuraboaSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AuraboaSecondaryGene[name] = this;
+    FRTool.AuraboaSecondaryGenes.push(this);
+}
+
+FRTool.AuraboaTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.AuraboaTertiaryGene[name] = this;
+    FRTool.AuraboaTertiaryGenes.push(this);
+}
+
 FRTool.DusthidePrimaryGene = function(name, odds, price) {
     this.Name = name;
     this.Odds = FRTool.Odds[odds];
@@ -289,6 +313,9 @@ FRTool.initFR = function(data) {
     FRTool.SandsurgePrimaryGenes = [];
     FRTool.SandsurgeSecondaryGenes = [];
     FRTool.SandsurgeTertiaryGenes = [];
+    FRTool.AuraboaPrimaryGenes = [];
+    FRTool.AuraboaSecondaryGenes = [];
+    FRTool.AuraboaTertiaryGenes = [];
     FRTool.DusthidePrimaryGenes = [];
     FRTool.DusthideSecondaryGenes = [];
     FRTool.DusthideTertiaryGenes = [];
@@ -402,12 +429,24 @@ FRTool.initFR = function(data) {
         new FRTool.SandsurgeSecondaryGene(data.SandsurgeSecondaryGeneList[i][0], data.SandsurgeSecondaryGeneList[i][1], data.SandsurgeSecondaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.SandsurgeeTertiaryGeneList.length; i++) {
+    for (var i = 0; i < data.SandsurgeTertiaryGeneList.length; i++) {
         new FRTool.SandsurgeTertiaryGene(data.SandsurgeTertiaryGeneList[i][0], data.SandsurgeTertiaryGeneList[i][1], data.SandsurgeTertiaryGeneList[i][2]);
     };
 
+    for (var i = 0; i < data.AuraboaPrimaryGeneList.length; i++) {
+        new FRTool.AuraboaPrimaryGene(data.AuraboaPrimaryGeneList[i][0], data.AuraboaPrimaryGeneList[i][1], data.AuraboaPrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AuraboaSecondaryGeneList.length; i++) {
+        new FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.AuraboaTertiaryGeneList.length; i++) {
+        new FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
+    };
+
     for (var i = 0; i < data.DusthidePrimaryGeneList.length; i++) {
-        new FRTool.DusthidePrimaryGene(data.DusthidePrimaryGeneList[i][0], data.UndertidePrimaryGeneList[i][1], data.UndertidePrimaryGeneList[i][2]);
+        new FRTool.DusthidePrimaryGene(data.DusthidePrimaryGeneList[i][0], data.DusthidePrimaryGeneList[i][1], data.DusthidePrimaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.DusthideSecondaryGeneList.length; i++) {
@@ -417,7 +456,6 @@ FRTool.initFR = function(data) {
     for (var i = 0; i < data.DusthideTertiaryGeneList.length; i++) {
         new FRTool.DusthideTertiaryGene(data.DusthideTertiaryGeneList[i][0], data.DusthideTertiaryGeneList[i][1], data.DusthideTertiaryGeneList[i][2]);
     };
-
 
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
@@ -533,11 +571,14 @@ FRTool.getGeneRate = function(gene1, gene2) {
         || (gene1 instanceof FRTool.AetherPrimaryGene && gene2 instanceof FRTool.AetherPrimaryGene) 
         || (gene1 instanceof FRTool.AetherSecondaryGene && gene2 instanceof FRTool.AetherSecondaryGene) 
         || (gene1 instanceof FRTool.AetherTertiaryGene && gene2 instanceof FRTool.AetherTertiaryGene)
-        || (gene1 instanceof FRTool.SandsurgePrimaryGene && gene2 instanceof FRTool.SandsurgePrimaryGene) 
-        || (gene1 instanceof FRTool.SandsurgeSecondaryGene && gene2 instanceof FRTool.SandsurgeSecondaryGene) 
+        || (gene1 instanceof FRTool.SandsurgePrimaryGene && gene2 instanceof FRTool.SandsurgePrimaryGene)
+        || (gene1 instanceof FRTool.SandsurgeSecondaryGene && gene2 instanceof FRTool.SandsurgeSecondaryGene)
         || (gene1 instanceof FRTool.SandsurgeTertiaryGene && gene2 instanceof FRTool.SandsurgeTertiaryGene)
-        || (gene1 instanceof FRTool.DusthidePrimaryGene && gene2 instanceof FRTool.DusthidePrimaryGene) 
-        || (gene1 instanceof FRTool.DusthideSecondaryGene && gene2 instanceof FRTool.DusthideSecondaryGene) 
+        || (gene1 instanceof FRTool.AuraboaPrimaryGene && gene2 instanceof FRTool.AuraboaPrimaryGene)
+        || (gene1 instanceof FRTool.AuraboaSecondaryGene && gene2 instanceof FRTool.AuraboaSecondaryGene)
+        || (gene1 instanceof FRTool.AuraboaTertiaryGene && gene2 instanceof FRTool.AuraboaTertiaryGene)
+        || (gene1 instanceof FRTool.DusthidePrimaryGene && gene2 instanceof FRTool.DusthidePrimaryGene)
+        || (gene1 instanceof FRTool.DusthideSecondaryGene && gene2 instanceof FRTool.DusthideSecondaryGene)
         || (gene1 instanceof FRTool.DusthideTertiaryGene && gene2 instanceof FRTool.DusthideTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
