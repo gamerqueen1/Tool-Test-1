@@ -441,9 +441,6 @@ FRTool.initFR = function(data) {
         new FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.AuraboaTertiaryGeneList.length; i++) {
-        new FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
-    };
 
     for (var i = 0; i < data.DusthidePrimaryGeneList.length; i++) {
         new FRTool.DusthidePrimaryGene(data.DusthidePrimaryGeneList[i][0], data.DusthidePrimaryGeneList[i][1], data.DusthidePrimaryGeneList[i][2]);
