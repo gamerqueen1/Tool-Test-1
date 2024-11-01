@@ -457,8 +457,6 @@ FRTool.initFR = function(data) {
         new FRTool.DusthideTertiaryGene(data.DusthideTertiaryGeneList[i][0], data.DusthideTertiaryGeneList[i][1], data.DusthideTertiaryGeneList[i][2]);
     };
 
-
-
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
     };
@@ -578,7 +576,10 @@ FRTool.getGeneRate = function(gene1, gene2) {
         || (gene1 instanceof FRTool.SandsurgeTertiaryGene && gene2 instanceof FRTool.SandsurgeTertiaryGene)
         || (gene1 instanceof FRTool.AuraboaPrimaryGene && gene2 instanceof FRTool.AuraboaPrimaryGene) 
         || (gene1 instanceof FRTool.AuraboaSecondaryGene && gene2 instanceof FRTool.AuraboaSecondaryGene) 
-        || (gene1 instanceof FRTool.AuraboaTertiaryGene && gene2 instanceof FRTool.AuraboaTertiaryGene)) {
+        || (gene1 instanceof FRTool.AuraboaTertiaryGene && gene2 instanceof FRTool.AuraboaTertiaryGene)
+        || (gene1 instanceof FRTool.DusthidePrimaryGene && gene2 instanceof FRTool.DusthidePrimaryGene)
+        || (gene1 instanceof FRTool.DusthideSecondaryGene && gene2 instanceof FRTool.DusthideSecondaryGene)
+        || (gene1 instanceof FRTool.DusthideTertiaryGene && gene2 instanceof FRTool.DusthideTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
         }
