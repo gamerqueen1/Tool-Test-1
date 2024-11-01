@@ -402,12 +402,12 @@ FRTool.initFR = function(data) {
         new FRTool.SandsurgeSecondaryGene(data.SandsurgeSecondaryGeneList[i][0], data.SandsurgeSecondaryGeneList[i][1], data.SandsurgeSecondaryGeneList[i][2]);
     };
 
-    for (var i = 0; i < data.SandsurgeTertiaryGeneList.length; i++) {
+    for (var i = 0; i < data.SandsurgeeTertiaryGeneList.length; i++) {
         new FRTool.SandsurgeTertiaryGene(data.SandsurgeTertiaryGeneList[i][0], data.SandsurgeTertiaryGeneList[i][1], data.SandsurgeTertiaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.DusthidePrimaryGeneList.length; i++) {
-        new FRTool.DusthidePrimaryGene(data.DusthidePrimaryGeneList[i][0], data.DusthidePrimaryGeneList[i][1], data.DusthidePrimaryGeneList[i][2]);
+        new FRTool.DusthidePrimaryGene(data.DusthidePrimaryGeneList[i][0], data.UndertidePrimaryGeneList[i][1], data.UndertidePrimaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.DusthideSecondaryGeneList.length; i++) {
@@ -417,6 +417,7 @@ FRTool.initFR = function(data) {
     for (var i = 0; i < data.DusthideTertiaryGeneList.length; i++) {
         new FRTool.DusthideTertiaryGene(data.DusthideTertiaryGeneList[i][0], data.DusthideTertiaryGeneList[i][1], data.DusthideTertiaryGeneList[i][2]);
     };
+
 
     for (var i = 0; i < data.ColorList.length; i++) {
         new FRTool.Color(data.ColorList[i][0], data.ColorList[i][1]);
@@ -532,11 +533,11 @@ FRTool.getGeneRate = function(gene1, gene2) {
         || (gene1 instanceof FRTool.AetherPrimaryGene && gene2 instanceof FRTool.AetherPrimaryGene) 
         || (gene1 instanceof FRTool.AetherSecondaryGene && gene2 instanceof FRTool.AetherSecondaryGene) 
         || (gene1 instanceof FRTool.AetherTertiaryGene && gene2 instanceof FRTool.AetherTertiaryGene)
-        || (gene1 instanceof FRTool.SandsurgePrimaryGene && gene2 instanceof FRTool.SandsurgePrimaryGene)
-        || (gene1 instanceof FRTool.SandsurgeSecondaryGene && gene2 instanceof FRTool.SandsurgeSecondaryGene)
+        || (gene1 instanceof FRTool.SandsurgePrimaryGene && gene2 instanceof FRTool.SandsurgePrimaryGene) 
+        || (gene1 instanceof FRTool.SandsurgeSecondaryGene && gene2 instanceof FRTool.SandsurgeSecondaryGene) 
         || (gene1 instanceof FRTool.SandsurgeTertiaryGene && gene2 instanceof FRTool.SandsurgeTertiaryGene)
-        || (gene1 instanceof FRTool.DusthidePrimaryGene && gene2 instanceof FRTool.DusthidePrimaryGene)
-        || (gene1 instanceof FRTool.DusthideSecondaryGene && gene2 instanceof FRTool.DusthideSecondaryGene)
+        || (gene1 instanceof FRTool.DusthidePrimaryGene && gene2 instanceof FRTool.DusthidePrimaryGene) 
+        || (gene1 instanceof FRTool.DusthideSecondaryGene && gene2 instanceof FRTool.DusthideSecondaryGene) 
         || (gene1 instanceof FRTool.DusthideTertiaryGene && gene2 instanceof FRTool.DusthideTertiaryGene)) {
         if (gene1 == gene2) {
             return [1];
