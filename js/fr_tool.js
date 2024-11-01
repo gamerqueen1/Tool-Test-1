@@ -213,20 +213,11 @@ FRTool.SandsurgeTertiaryGene = function(name, odds, price) {
 
 FRTool.AuraboaPrimaryGene = function(name, odds, price) {
     this.Name = name;
-
-    // Check if FRTool.Odds is defined and if it contains the given odds
-    if (FRTool.Odds && FRTool.Odds[odds] !== undefined) {
-        this.Odds = FRTool.Odds[odds];
-    } else {
-        console.error('Invalid odds value:', odds, 'in FRTool.Odds:', FRTool.Odds);
-        this.Odds = null; // or set a default value if needed
-    }
-
+    this.Odds = FRTool.Odds[odds];
     this.Price = price;
     FRTool.AuraboaPrimaryGene[name] = this;
     FRTool.AuraboaPrimaryGenes.push(this);
 }
-
 
 FRTool.AuraboaSecondaryGene = function(name, odds, price) {
     this.Name = name;
@@ -242,6 +233,30 @@ FRTool.AuraboaTertiaryGene = function(name, odds, price) {
     this.Price = price;
     FRTool.AuraboaTertiaryGene[name] = this;
     FRTool.AuraboaTertiaryGenes.push(this);
+}
+
+FRTool.DusthidePrimaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.DusthidePrimaryGene[name] = this;
+    FRTool.DusthidePrimaryGenes.push(this);
+}
+
+FRTool.DusthideSecondaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.DusthideSecondaryGene[name] = this;
+    FRTool.DusthideSecondaryGenes.push(this);
+}
+
+FRTool.DusthideTertiaryGene = function(name, odds, price) {
+    this.Name = name;
+    this.Odds = FRTool.Odds[odds];
+    this.Price = price;
+    FRTool.DusthideTertiaryGene[name] = this;
+    FRTool.DusthideTertiaryGenes.push(this);
 }
 
 FRTool.Color = function(name, color) {
@@ -301,6 +316,9 @@ FRTool.initFR = function(data) {
     FRTool.AuraboaPrimaryGenes = [];
     FRTool.AuraboaSecondaryGenes = [];
     FRTool.AuraboaTertiaryGenes = [];
+    FRTool.DusthidePrimaryGenes = [];
+    FRTool.DusthideSecondaryGenes = [];
+    FRTool.DusthideTertiaryGenes = [];
     FRTool.ModernBreeds = [];
     FRTool.AncientBreeds = [];
     FRTool.Colors = [];
@@ -416,29 +434,28 @@ FRTool.initFR = function(data) {
     };
 
     for (var i = 0; i < data.AuraboaPrimaryGeneList.length; i++) {
-         FRTool.AuraboaPrimaryGene(data.AuraboaPrimaryGeneList[i][0], data.AuraboaPrimaryGeneList[i][1], data.AuraboaPrimaryGeneList[i][2]);
+        new FRTool.AuraboaPrimaryGene(data.AuraboaPrimaryGeneList[i][0], data.AuraboaPrimaryGeneList[i][1], data.AuraboaPrimaryGeneList[i][2]);
     };
 
     for (var i = 0; i < data.AuraboaSecondaryGeneList.length; i++) {
-         FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
+        new FRTool.AuraboaSecondaryGene(data.AuraboaSecondaryGeneList[i][0], data.AuraboaSecondaryGeneList[i][1], data.AuraboaSecondaryGeneList[i][2]);
     };
 
-// Ensure data and AuraboaTertiaryGeneList are defined
-if (data && Array.isArray(data.AuraboaTertiaryGeneList)) {
-    // Loop through the AuraboaTertiaryGeneList
     for (var i = 0; i < data.AuraboaTertiaryGeneList.length; i++) {
-        var geneListItem = data.AuraboaTertiaryGeneList[i];
+        new FRTool.AuraboaTertiaryGene(data.AuraboaTertiaryGeneList[i][0], data.AuraboaTertiaryGeneList[i][1], data.AuraboaTertiaryGeneList[i][2]);
+    };
 
-        // Check if the current item is an array and has at least 3 elements
-        if (Array.isArray(geneListItem) && geneListItem.length >= 3) {
-            FRTool.AuraboaTertiaryGene(geneListItem[0], geneListItem[1], geneListItem[2]);
-        } else {
-            console.warn('Invalid item in AuraboaTertiaryGeneList at index ' + i, geneListItem);
-        }
-    }
-} else {
-    console.error('AuraboaTertiaryGeneList is undefined or not an array');
-}
+    for (var i = 0; i < data.DusthidePrimaryGeneList.length; i++) {
+        new FRTool.DusthidePrimaryGene(data.DusthidePrimaryGeneList[i][0], data.DusthidePrimaryGeneList[i][1], data.DusthidePrimaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.DusthideSecondaryGeneList.length; i++) {
+        new FRTool.DusthideSecondaryGene(data.DusthideSecondaryGeneList[i][0], data.DusthideSecondaryGeneList[i][1], data.DusthideSecondaryGeneList[i][2]);
+    };
+
+    for (var i = 0; i < data.DusthideTertiaryGeneList.length; i++) {
+        new FRTool.DusthideTertiaryGene(data.DusthideTertiaryGeneList[i][0], data.DusthideTertiaryGeneList[i][1], data.DusthideTertiaryGeneList[i][2]);
+    };
 
 
 
